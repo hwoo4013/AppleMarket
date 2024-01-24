@@ -9,7 +9,7 @@ import java.io.Serializable
 data class MyItem (
     val Image: Int,
     val name: String,
-    val price: Int,
+    val price: String,
     val ItemTitle: String,
     val ItemDetail: String,
     val Address: String

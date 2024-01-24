@@ -19,16 +19,22 @@ class MyAdapter(val myItems: MutableList<MyItem>) : RecyclerView.Adapter<MyAdapt
         val binding = ItemRecyclerviewBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         Log.d("MyAdapter", "onCreateViewHolder()")
         return Holder(binding)
-        )
     }
 
     override fun onBindViewHolder(holder: MyAdapter.Holder, position: Int) {
       holder.itemView.setOnClickListener {
           itemClick?.onClick(it, position)
       }
-        holder.iconImageView.setImageResource(MyItem[position].)
-    }
 
+        // 간격 설정
+        val layoutParams = holder.itemView.layoutParams
+        layoutParams.height = 300
+        holder.itemView.requestLayout()
+
+        holder.itemTitle.text = myItems[position].ItemTitle
+        holder.Adress.text = myItems[position].Address
+        holder.itemPrice.text = myItems[position].price
+    }
 
     override fun getItemId(position: Int): Long {
         return position.toLong()
@@ -39,8 +45,9 @@ class MyAdapter(val myItems: MutableList<MyItem>) : RecyclerView.Adapter<MyAdapt
     }
 
     inner class Holder(val binding: ItemRecyclerviewBinding) : RecyclerView.ViewHolder(binding.root) {
-        val iconImageView = binding.iconItem
-        val
+        val itemTitle = binding.itemTitle
+        val Adress = binding.Adress
+        val itemPrice = binding.itemPrice
     }
 
 }
