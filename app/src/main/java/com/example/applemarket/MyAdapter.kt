@@ -31,6 +31,8 @@ class MyAdapter(val myItems: MutableList<MyItem>) : RecyclerView.Adapter<MyAdapt
         layoutParams.height = 300
         holder.itemView.requestLayout()
 
+        // 리사이클러뷰 목룍
+        holder.iconItem.setImageResource(myItems[position].Image)
         holder.itemTitle.text = myItems[position].ItemTitle
         holder.Adress.text = myItems[position].Address
         holder.itemPrice.text = myItems[position].price
@@ -45,6 +47,7 @@ class MyAdapter(val myItems: MutableList<MyItem>) : RecyclerView.Adapter<MyAdapt
     }
 
     inner class Holder(val binding: ItemRecyclerviewBinding) : RecyclerView.ViewHolder(binding.root) {
+        val iconItem = binding.iconItem
         val itemTitle = binding.itemTitle
         val Adress = binding.Adress
         val itemPrice = binding.itemPrice
