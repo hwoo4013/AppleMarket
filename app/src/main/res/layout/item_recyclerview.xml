@@ -7,34 +7,34 @@
 
     <TextView
         android:id="@+id/itemTitle"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="112dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toEndOf="@+id/iconItem"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Adress"
-        android:layout_width="366dp"
-        android:layout_height="9dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toEndOf="@+id/iconItem"
         app:layout_constraintTop_toBottomOf="@+id/itemTitle" />
 
     <TextView
         android:id="@+id/itemPrice"
-        android:layout_width="207dp"
-        android:layout_height="21dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toEndOf="@+id/iconItem"
         app:layout_constraintTop_toBottomOf="@+id/Adress" />
 
@@ -46,6 +46,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"
+        app:layout_constraintVertical_bias="0.448"
         app:srcCompat="@drawable/sample1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
