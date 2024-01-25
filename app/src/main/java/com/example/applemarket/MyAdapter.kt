@@ -26,11 +26,6 @@ class MyAdapter(val myItems: MutableList<MyItem>) : RecyclerView.Adapter<MyAdapt
           itemClick?.onClick(it, position)
       }
 
-        // 간격 설정
-        val layoutParams = holder.itemView.layoutParams
-        layoutParams.height = 300
-        holder.itemView.requestLayout()
-
         // 리사이클러뷰 목룍
         holder.iconItem.setImageResource(myItems[position].Image)
         holder.itemTitle.text = myItems[position].ItemTitle
