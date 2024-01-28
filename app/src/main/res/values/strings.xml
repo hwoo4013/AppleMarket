@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AppleMarket</string>
+    <string-array name="spinnerArray">
+        <item>내배캠동</item>
+        <item>삼성동</item>
+        <item>강호동</item>
+    </string-array>
 </resources>

@@ -9,8 +9,8 @@ import java.io.Serializable
 data class MyItem (
     val Image: Int,
     val name: String,
-    val price: String,
+    val price: Int,
     val ItemTitle: String,
     val ItemDetail: String,
     val Address: String
-    ) : Parcelable
+) : Parcelable
